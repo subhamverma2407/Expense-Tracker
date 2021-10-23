@@ -14,7 +14,6 @@ An app built with React.js to track your income and expense. Use charts to visua
 
 <img width="800" alt="Screenshot 2021-10-23 at 2 12 48 PM" src="https://user-images.githubusercontent.com/26406370/138549772-cee6cded-b302-4d45-b23b-6c048c479e1c.png">
 
-
 ### `Cloning the Repo:`
 
 Download the repo in your local system using the `git clone` command.
