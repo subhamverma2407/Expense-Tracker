@@ -1,0 +1,28 @@
+.nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  padding: 0.5rem 0.5rem;
+  margin-top: 2rem;
+  border-radius: 0.3rem;
+}
+
+.nav__header {
+  width: 100%;
+  text-align: left;
+  font-size: 1.2rem;
+  color: #51587d;
+  font-weight: bold;
+}
+
+.nav__icon {
+  margin-left: 1rem;
+  outline: none;
+  border: 1px solid #d9d9d9;
+  background-color: #fff;
+}
+
+.nav__icon:hover {
+  background-color: #f9f9f9;
+  cursor: pointer;
+}

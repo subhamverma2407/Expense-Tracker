@@ -1,0 +1,145 @@
+.container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-top: 1rem;
+}
+
+.transaction__form {
+  color: #51587d;
+  font-size: 0.8rem;
+  width: 80%;
+}
+
+.transaction__input {
+  text-align: center;
+  outline: none;
+  border: none;
+  width: 100%;
+  border-radius: 0.3rem;
+  background: #f9f9f9;
+  height: 2rem;
+}
+
+.transaction__input:focus::placeholder {
+  color: transparent;
+}
+
+.transaction__type {
+  display: flex;
+  justify-content: space-around;
+  margin-top: 1rem;
+  align-items: center;
+}
+
+.transaction__type label {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+}
+
+.transaction__type input {
+  cursor: pointer;
+}
+
+.transaction__type span {
+  margin-left: 0.5rem;
+}
+
+.transaction__category {
+  color: #51587d;
+  margin-top: 1rem;
+  width: 100%;
+  border-radius: 0.3rem;
+  background: #f9f9f9;
+  height: 2rem;
+  outline: none;
+  border: none;
+}
+
+.transaction__category_option {
+  text-align: center;
+  background: #f9f9f9;
+}
+
+.transaction__form button {
+  box-shadow: 1px 6px 13px -5px rgba(0, 0, 0, 0.31);
+  -webkit-box-shadow: 1px 6px 13px -5px rgba(0, 0, 0, 0.31);
+  -moz-box-shadow: 1px 6px 13px -5px rgba(0, 0, 0, 0.31);
+  margin-top: 1.5rem;
+  outline: none;
+  border-radius: 0.3rem;
+  padding: 0.5rem;
+  width: 100%;
+  font-size: 1rem;
+  font-weight: 500;
+  color: white;
+  cursor: pointer;
+  transition: 300ms ease-in-out;
+}
+
+.transaction__income {
+  background: #4b9ef3;
+  border: 1px solid #4b9ef3;
+}
+
+.transaction__income:hover,
+.transaction__income:focus {
+  background: white;
+  color: #4b9ef3;
+}
+
+.transaction__expense {
+  background: #ff5722;
+  border: 1px solid #ff5722;
+}
+
+.transaction__expense:hover,
+.transaction__expense:focus {
+  background: white;
+  color: #ff5722;
+}
+
+.errorMessage {
+  color: red;
+  font-size: 1rem;
+  margin-top: 1rem;
+  animation-name: shake;
+  animation-iteration-count: 1;
+  animation-duration: 500ms;
+}
+
+@keyframes shake {
+  0% {
+    transform: translateX(-5%);
+  }
+  20% {
+    transform: translateX(5%);
+  }
+  40% {
+    transform: translateX(-5%);
+  }
+  60% {
+    transform: translateX(5%);
+  }
+  80% {
+    transform: translateX(-5%);
+  }
+  100% {
+    transform: translateX(5%);
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .transaction__form {
+    width: 100%;
+  }
+
+  .transaction__type,
+  .transaction__category,
+  .transaction__form button {
+    margin-top: 2rem;
+  }
+}

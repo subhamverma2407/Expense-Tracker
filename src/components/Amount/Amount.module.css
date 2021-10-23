@@ -1,0 +1,43 @@
+.amount {
+  display: flex;
+  justify-content: space-between;
+  background-color: #f9f9f9;
+  margin-top: 1rem;
+  padding: 0.5rem 2rem;
+  border-radius: 0.3rem;
+  -webkit-box-shadow: 1px 3px 10px 2px rgba(184, 184, 184, 1);
+  -moz-box-shadow: 1px 3px 10px 2px rgba(184, 184, 184, 1);
+  box-shadow: 1px 3px 10px 2px rgba(184, 184, 184, 1);
+}
+
+.income__title,
+.expense__title {
+  text-transform: uppercase;
+  font-weight: 400;
+  font-size: 0.8rem;
+}
+
+.income__amount,
+.expense__amount {
+  line-height: 1.3;
+}
+
+.income__amount_value,
+.expense__amount_value {
+  font-weight: 700;
+  font-size: 1.6rem;
+}
+
+.income__amount_value {
+  color: #4b9ef3;
+}
+
+.expense__amount_value {
+  color: #ff5722;
+}
+
+.income__amount_value::before,
+.expense__amount_value::before {
+  content: "\20B9";
+  margin-right: 0.3rem;
+}

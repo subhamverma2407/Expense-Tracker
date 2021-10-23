@@ -1,0 +1,73 @@
+.container {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  padding: 1rem 1rem;
+  margin-top: 2rem;
+}
+
+.history__container {
+  margin-bottom: 0.05rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0.5rem 0.5rem;
+  font-size: 1rem;
+}
+
+.history__income {
+  color: #4b9ef3;
+  border-left: 2px solid #4b9ef3;
+  background: #f1f8ff;
+}
+
+.history__expense {
+  color: #ff5722;
+  border-left: 2px solid #ff5722;
+  background: #fff5f2;
+}
+
+.history__title {
+  font-size: 1rem;
+}
+
+.history__amount {
+  display: flex;
+  align-items: center;
+}
+
+.history__amount span {
+  font-size: 0.9rem;
+}
+.history__amount span::before {
+  content: "\20B9";
+  margin-right: 0.1rem;
+}
+
+.history__button {
+  cursor: pointer;
+  margin-left: 1rem;
+  padding: 0 0.1rem 0 0.1rem;
+  display: flex;
+  align-items: center;
+  border: none;
+}
+
+.no__transaction {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  justify-content: center;
+  align-items: center;
+}
+
+.no__transaction img {
+  display: inline-block;
+  width: 70%;
+  object-fit: contain;
+  margin-bottom: 1rem;
+}
+
+.no__transaction span {
+  color: #51587d;
+}

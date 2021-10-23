@@ -1,0 +1,50 @@
+.chart__container {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  align-items: center;
+  justify-content: center;
+  padding: 1rem;
+}
+@media screen and (min-width: 768px) {
+  .chart__container {
+    flex-direction: row;
+  }
+}
+
+@media screen and (min-width: 1000px) {
+  .chart__container {
+    flex-direction: row;
+  }
+}
+
+.income__chart,
+.expense__chart {
+  padding: 1rem;
+
+  width: 100%;
+}
+
+.no__income,
+.no__expense {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  justify-content: center;
+  align-items: center;
+  padding: 1rem;
+}
+
+.no__income img,
+.no__expense img {
+  display: inline-block;
+  width: 70%;
+
+  height: 150px;
+}
+
+.no__income span,
+.no__expense span {
+  color: #51587d;
+  height: 100%;
+}

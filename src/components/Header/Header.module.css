@@ -1,0 +1,19 @@
+.header {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 0.5rem;
+  border-radius: 0.3rem;
+  background-color: rgb(249, 249, 249);
+}
+
+.app__title {
+  color: #51587d;
+  font-size: 1rem;
+  font-weight: bold;
+  text-align: center;
+}
+
+.app__menu {
+  color: #51587d;
+}

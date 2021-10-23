@@ -1,0 +1,32 @@
+.balance {
+  display: flex;
+  margin-top: 1.5rem;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.balance__title {
+  text-transform: uppercase;
+  font-weight: 400;
+  font-size: 0.8rem;
+}
+
+.balance__amount {
+  line-height: 1.2;
+}
+
+.balance__amount_value {
+  display: inline-block;
+  font-weight: 700;
+  font-size: 2rem;
+  color: #51587d;
+}
+
+.balance__amount_value::before {
+  content: "\20B9";
+  margin-right: 0.3rem;
+}
+/* .balance__amount {
+    font-weight: 500;
+    font-size: 1.5rem;
+} */
