@@ -22,8 +22,8 @@
   height: 2rem;
 }
 
-.transaction__input:focus::placeholder {
-  color: transparent;
+.transaction__input:focus {
+  border: 0.1rem solid black;
 }
 
 .transaction__type {
@@ -57,6 +57,10 @@
   height: 2rem;
   outline: none;
   border: none;
+}
+
+.transaction__category:focus {
+  border: 0.1rem solid black;
 }
 
 .transaction__category_option {

@@ -37,7 +37,7 @@ const Transaction = (props) => {
   const onSubmit = (e) => {
     e.preventDefault();
     if (
-      amount !== "" &&
+      amount.trim() !== "" &&
       parseInt(amount) !== 0 &&
       !isNaN(amount) &&
       transactionType !== null &&
