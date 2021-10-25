@@ -86,7 +86,7 @@ const Transaction = (props) => {
     <div className={styles.container}>
       <form className={styles.transaction__form}>
         <input
-          placeholder="AMOUNT"
+          placeholder="ENTER AMOUNT"
           className={styles.transaction__input}
           onChange={(e) => setAmount(e.target.value)}
           onFocus={onAmountFocus}
