@@ -6,8 +6,7 @@ name: Build
 on:
   # Triggers the workflow on push or pull request events but only for the master branch
   push:
-    branches: [ master ]
-
+    branches: [master]
 
   # Allows you to run this workflow manually from the Actions tab
   workflow_dispatch:
@@ -23,28 +22,26 @@ jobs:
     steps:
       # Checks-out your repository under $GITHUB_WORKSPACE, so your job can access it
       - uses: actions/checkout@v2
-      
-      
+
       - name: Setup Node.js environment
         uses: actions/setup-node@v2.4.1
         with:
           node-version: 12.x
-
 
       # Runs a set of commands using the runners shell
       - name: Building
         run: |
           npm install
           npm run build
-      
-      
+
       - name: Deploy to netlify
         # You may pin to the exact commit or the version.
         # uses: nwtgck/actions-netlify@f517512ae75beec8896aa7b027c1c72f01816200
         uses: nwtgck/actions-netlify@v1.2.2
         with:
           # Publish directory
-          deploy-message: '${{github.event.head_commit.message}}'
+          publish-dir: "./build"
+          deploy-message: "${{github.event.head_commit.message}}"
         env:
           NETLIFY_AUTH_TOKEN: ${{ secrets.NETLIFY_AUTH_TOKEN }}
           NETLIFY_SITE_ID: ${{ secrets.NETLIFY_SITE_ID }}
