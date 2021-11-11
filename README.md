@@ -1,5 +1,3 @@
-![example workflow](https://github.com/subhamverma2407/Expense-Tracker/actions/workflows/Build.yml/)
-
 # Expense Tracker
 
 An app built with React.js to track your income and expense. Use charts to visualize the income and expenses.
