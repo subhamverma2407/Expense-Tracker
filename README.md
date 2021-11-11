@@ -1,4 +1,4 @@
-![example workflow](https://github.com/subhamverma2407/Expense-Tracker/actions/workflows/Build.yml/badge.svg)
+![example workflow](https://github.com/subhamverma2407/Expense-Tracker/actions/workflows/Build.yml/)
 
 # Expense Tracker
 
